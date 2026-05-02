@@ -1,0 +1,12 @@
+retriever:
+  top_k: 5
+  chunk_size: 500
+  chunk_overlap: 100
+
+embedding:
+  provider: local
+  model: all-MiniLM-L6-v2
+
+vectorstore:
+  type: faiss
+  index_path: ./data/index

@@ -1,0 +1,15 @@
+evaluation:
+  metrics:
+    - exact_match
+    - f1
+    - context_recall
+    - context_precision
+    - hallucination
+
+  hallucination:
+    use_negative_samples: true
+
+  reasoning:
+    enabled: true
+
+  difficulty_analysis: true

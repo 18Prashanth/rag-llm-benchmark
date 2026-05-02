@@ -1,0 +1,18 @@
+models:
+  open:
+    - name: llama
+      provider: huggingface
+      temperature: 0.0
+
+    - name: mistral
+      provider: huggingface
+      temperature: 0.0
+
+  closed:
+    - name: gpt
+      provider: openai
+      temperature: 0.0
+
+    - name: gemini
+      provider: google
+      temperature: 0.0
