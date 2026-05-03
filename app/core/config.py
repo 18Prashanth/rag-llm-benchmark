@@ -14,6 +14,9 @@ class Config:
         self.embedding_model = os.getenv("EMBEDDING_MODEL")
         self.vector_db = os.getenv("VECTOR_DB")
         self.faiss_index_path = os.getenv("FAISS_INDEX_PATH")
+        self.google_api_key = os.getenv("GOOGLE_API_KEY")
+        self.langsmith_project = os.getenv("LANGCHAIN_PROJECT")
+        self.langsmith_tracing = os.getenv("LANGCHAIN_TRACING_V2")
 
     def _load_yaml(self):
         with open("configs/retriever_config.yaml", "r") as f:
